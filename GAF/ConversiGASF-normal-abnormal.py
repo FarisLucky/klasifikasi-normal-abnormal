@@ -6,7 +6,8 @@ import numpy as np
 import pandas as pd
 import numpy as np
 
-df = pd.read_excel("Book1.xlsx",usecols=[0,1,2,3,4,5,6,7],sheet_name='Sheet1')
+df = pd.read_excel("Book3.xlsx",usecols=[0,1,2,3,4,5,6,7],sheet_name='Sheet1')
+# np.reshape(df["nama_kolom"].to_numpy(), (1,60))
 df1 = np.reshape(df[1].to_numpy(),(1,60))
 df2 = np.reshape(df[2].to_numpy(),(1,60))
 df3 = np.reshape(df[3].to_numpy(),(1,60))
@@ -16,7 +17,7 @@ df6 = np.reshape(df[6].to_numpy(),(1,60))
 df7 = np.reshape(df[7].to_numpy(),(1,60))
 df8 = np.reshape(df[8].to_numpy(),(1,60))
 
-sheet2 = pd.read_excel("Book1.xlsx",usecols=[0,1,2,3,4,5,6,7],sheet_name='Sheet2')
+sheet2 = pd.read_excel("Book3.xlsx",usecols=[0,1,2,3,4,5,6,7],sheet_name='Sheet2')
 ab1 = np.reshape(sheet2[1].to_numpy(),(1,60))
 ab2 = np.reshape(sheet2[2].to_numpy(),(1,60))
 ab3 = np.reshape(sheet2[3].to_numpy(),(1,60))
