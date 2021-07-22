@@ -2,12 +2,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-df = pd.read_excel("../dataset/dataset_mentah.xlsx",usecols=[0,1,2,3,4],sheet_name='normal')
-df1 = np.reshape(df["salman(d-2)"].to_numpy(),(1,200))
+df = pd.read_excel("../dataset/dataset_mentah.xlsx",usecols=[0,1,2,3,4,5],sheet_name='normal_60')
+df1 = np.reshape(df["salman_new (d-2)"].to_numpy(),(1,60))
 # df2 = np.reshape(df["ibnu M-1(d-2)"].to_numpy(),(1,200))
-df3 = np.reshape(df["ibnu M-1(d-4)"].to_numpy(),(1,200))
-df4 = np.reshape(df["dani M-3(d-3)"].to_numpy(),(1,200))
-df5 = np.reshape(df["ani M-kn95"].to_numpy(),(1,200))
+df3 = np.reshape(df["ibnu M-1(d-2)"].to_numpy(),(1,60))
+df4 = np.reshape(df["dani M-3(d-3)"].to_numpy(),(1,60))
+df5 = np.reshape(df["ani M-kn95"].to_numpy(),(1,60))
 # print(df1)
 # quit()
 # # Note that even in the OO-style, we use `.pyplot.figure` to create the figure.
